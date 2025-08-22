@@ -54,15 +54,15 @@ a {
     align-items: center;
     flex-direction: column;
     // margin: var(--space-lg);
-    margin-bottom: var(--space-6xl);
+    margin-bottom: var(--space-xl);
 
     @media (min-width: 640px) {
-        margin-bottom: calc(var(--space-6xl) * 2);
+        margin-bottom: calc(var(--space-xl) * 2);
 
     }
 
     @media (min-width: 1200px) {
-        margin-bottom: calc(var(--space-6xl) * 3);
+        margin-bottom: calc(var(--space-xl) * 3);
 
     }
 }
