@@ -39,10 +39,7 @@
         transition: all 0.3s ease;
         min-height: 380px;
 
-        @media (min-width: 1200px) {
-            min-height: 680px;
-        }
-
+   
         &--hidden {
             transform: rotate(-7deg) translateX(-130%);
         }
