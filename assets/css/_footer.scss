@@ -11,7 +11,7 @@
     &__content {
         display: grid;
         min-height: 100%;
-        padding: 0 var(--space-lg);
+        // padding: 0 var(--space-lg);
         z-index: 3;
         gap: var(--space-3xl);
         grid-template-columns: 1fr;
