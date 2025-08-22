@@ -40,7 +40,7 @@
         min-height: 380px;
 
         @media (min-width: 1200px) {
-            min-height: 480px;
+            // min-height: 680px;
         }
 
         &--hidden {
@@ -95,14 +95,14 @@
         bottom: -10%;
         right: -20%;
         filter: drop-shadow(1px 10px 100px #222222);
-        max-width: 70vw;
+        max-width: 500px;
         z-index: 0;
 
         @media (min-width: 640px) {
             bottom: auto;
             right: 0;
             bottom: 0;
-            max-width: 50vw;
+            // max-width: 50vw;
         }
 
         @media (min-width: 1200px) {
