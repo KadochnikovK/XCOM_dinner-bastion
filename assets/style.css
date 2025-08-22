@@ -514,6 +514,11 @@ a {
   transition: all 0.3s ease;
   min-height: 380px;
 }
+@media (min-width: 1200px) {
+  .offer__wrapper {
+    min-height: 480px;
+  }
+}
 .offer__wrapper--hidden {
   transform: rotate(-7deg) translateX(-130%);
 }
