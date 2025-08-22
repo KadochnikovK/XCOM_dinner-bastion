@@ -1,0 +1,196 @@
+.schedule {
+    &__list {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // flex-direction: column;
+
+
+        // background: linear-gradient(109.81deg, #E6E6E6 0%, #3E3E3E 100%);
+
+        // padding: var(--space-md) var(--space-xl);
+        gap: 15px;
+
+        /* 2 */
+
+
+
+
+
+
+        @media (min-width: 640px) {
+            // padding: var(--space-md) var(--space-5xl);
+            border-radius: var(--space-xl);
+
+        }
+
+        @media (min-width: 1200px) {
+            // padding: var(--space-md) var(--space-8xl);
+        }
+    }
+
+    &__divider {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-blue);
+        height: 8px;
+        width: 10px;
+
+        @media (min-width: 640px) {
+            height: 26px;
+            width: 23px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 31px;
+            width: 23px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+    }
+
+    &__item {
+        
+        box-shadow: 17px 14px 12.7px rgba(0, 0, 0, 0.5);
+        aspect-ratio: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        border-radius: var(--space-md);
+        // flex-direction: column;
+        // align-items: center;
+        gap: var(--space-sm);
+        position: relative;
+        padding: var(--space-md);
+        background-color: var(--color-blue);
+        color: var(--color-white);
+
+        &:not(:nth-last-child(1)) {
+            // border-bottom: 2px solid var(--color-grey-light);
+        }
+
+        &--small {
+            aspect-ratio: auto;
+            flex-direction: row;
+            align-items: center;
+        
+
+            .schedule__img  {
+                width: 15%;
+            }
+
+            .schedule__description {
+                align-items: start;
+                flex-direction: column;
+                font-size: 14px;
+
+                @media (min-width: 640px) {
+                    font-size: 48px;
+                }
+        
+                @media (min-width: 1200px) {
+                    font-size: 64px;
+                }
+            }
+        }
+
+        @media (min-width: 640px) {
+            gap: var(--space-lg);
+            padding: var(--space-base);
+        }
+
+        @media (min-width: 1200px) {
+            gap: var(--space-2xl);
+            padding: var(--space-5xl);
+        }
+
+        &--bg {
+            background: url(./images/card-bg.png);
+            background-size: cover;
+        }
+        &--colorful {
+            background-color: var(--color-orange);
+            .schedule__description {
+                color: var(--color-blue);
+            }
+        }
+    }
+
+    &__time {
+        font-size: var(--fs-2xl);
+        font-weight: 600;
+        flex-shrink: 0;
+        color: var(--color-blue);
+        position: relative;
+        padding-left: 24px;
+
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     left: 0px;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     width: 14px;
+        //     height: 14px;
+        //     background-color: var(--color-orange);
+        //     border-radius: 50%;
+        // }
+
+        @media (min-width: 640px) {
+            font-size: var(--fs-5xl);
+            width: 290px;
+            padding-left: 0;
+
+            &::before {
+                content: none;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
+            font-size: var(--fs-8xl);
+            width: 380px;
+        }
+    }
+
+    // &__divider {
+    //     display: none;
+
+    //     @media (min-width: 640px) {
+    //         display: block;
+    //     }
+    // }
+
+    &__description {
+        display: flex;
+        align-items: end;
+        font-size: 10px;
+        line-height: var(--lh-md);
+        color: var(--color-white);
+        // font-family: 'Second';
+        // font-weight: 400;
+
+        @media (min-width: 640px) {
+            flex: 1;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        @media (min-width: 1200px) {
+            flex: 1;
+            font-size: 34px;
+            font-weight: 500;
+        }
+
+        @media (min-width: 1600px) {
+            flex: 1;
+            font-size: 48px;
+        }
+    }
+
+
+}
