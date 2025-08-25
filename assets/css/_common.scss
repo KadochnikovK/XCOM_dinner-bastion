@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Main';
+    font-family: "Main";
     background-color: var(--color-light-bg);
 }
 
@@ -19,7 +19,7 @@ h3,
 p {
     margin: 0;
     padding: 0;
-    font-family: 'Main';
+    font-family: "Main";
 }
 
 h2 {
@@ -58,30 +58,26 @@ a {
 
     @media (min-width: 640px) {
         margin-bottom: calc(var(--space-xl) * 2);
-
     }
 
     @media (min-width: 1200px) {
         margin-bottom: calc(var(--space-xl) * 3);
-
     }
 }
 
 .content {
     width: 100%;
     max-width: var(--max-width);
-
+    margin: auto !important;
     padding: var(--space-md);
     // padding-top: 15vh;
 
     @media (min-width: 640px) {
-
         padding: var(--space-lg);
         // padding-top: 15vh;
     }
 
     @media (min-width: 1200px) {
-
         padding: var(--space-6xl);
         // padding-top: 15vh;
     }
@@ -117,7 +113,6 @@ a {
         width: var(--fs-sm);
         height: var(--fs-sm);
     }
-
 }
 
 .map {

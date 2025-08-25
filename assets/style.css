@@ -70,6 +70,7 @@ a {
 .content {
   width: 100%;
   max-width: var(--max-width);
+  margin: auto !important;
   padding: var(--space-md);
 }
 @media (min-width: 640px) {
@@ -1414,7 +1415,8 @@ a {
   gap: var(--space-xs);
   font-size: var(--fs-md);
 }
-.footer__text a, .footer__text span {
+.footer__text a,
+.footer__text span {
   color: var(--color-white);
   text-decoration: none;
   transition: opacity 0.3s;
@@ -1426,12 +1428,14 @@ a {
   text-decoration: underline;
 }
 @media (min-width: 1200px) {
-  .footer__text a, .footer__text span {
+  .footer__text a,
+  .footer__text span {
     font-size: 14px;
   }
 }
 @media (min-width: 1400px) {
-  .footer__text a, .footer__text span {
+  .footer__text a,
+  .footer__text span {
     font-size: 20px;
   }
 }
@@ -1556,4 +1560,4 @@ a {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}/*# sourceMappingURL=style.css.map */
+}
